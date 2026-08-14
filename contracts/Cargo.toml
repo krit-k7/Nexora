@@ -1,15 +1,19 @@
+# Workspace configuration for the Nexora Soroban contracts.
 [workspace]
 resolver = "2"
+
+# All smart contract packages included in the workspace.
 members = [
-    "logic_registry",
-    "proof_verifier",
-    "execution_router",
+    "logic_registry",    # Manages cross-chain logic and rules.
+    "proof_verifier",    # Verifies cryptographic proofs.
+    "execution_router",  # Routes verified executions.
 ]
 
+# Optimized release configuration for production deployments.
 [profile.release]
-opt-level = "z"
-overflow-checks = true
-debug = false
-panic = "abort"
-lto = true
-codegen-units = 1
+opt-level = "z"       # Optimize for minimal Wasm binary size.
+overflow-checks = true # Keep integer overflow checks enabled.
+debug = false         # Exclude debug information from the release build.
+panic = "abort"       # Abort immediately instead of unwinding on panic.
+lto = true             # Enable Link-Time Optimization.
+codegen-units = 1      # Optimize globally for better performance and smaller binaries.
