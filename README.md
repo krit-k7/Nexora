@@ -335,7 +335,8 @@ Here is a look at the real-time Nexora dashboards running on the Stellar Testnet
 
 
 ### Real-Time Telemetry & Protocol Analytics
-![Analytics Dashboard](./frontend/public/screenshots/screen2.png)
+<img width="1698" height="992" alt="image" src="https://github.com/user-attachments/assets/80dbc4fd-97e7-436b-80a0-6cec67fa15b6" />
+
 
 ### 📊 Note on Testnet Data Aggregation
 
