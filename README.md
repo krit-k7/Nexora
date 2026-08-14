@@ -89,7 +89,8 @@ No intermediaries. No assumptions. Just math.
   <tr>
     <td><img width="400" alt="image" src="https://github.com/user-attachments/assets/617c4b2a-8d89-4d85-8e17-5a8f7e9cf5ac" />
 </td>
-    <td><img src="https://github.com/user-attachments/assets/396de543-e26b-4632-a6b7-72386a692ebb" width="400" alt="Screenshot 6"/></td>
+    <td><img width="400" alt="image" src="https://github.com/user-attachments/assets/241850c0-c585-4630-999c-0ef6aab4ebc8" />
+</td>
   </tr>
 </table>
 
