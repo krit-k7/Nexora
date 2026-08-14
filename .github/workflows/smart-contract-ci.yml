@@ -1,0 +1,33 @@
+name: Smart Contract CI
+
+on:
+  push:
+    branches: [ "main" ]
+    paths:
+      - 'contracts/**'
+  pull_request:
+    branches: [ "main" ]
+    paths:
+      - 'contracts/**'
+
+jobs:
+  build_and_test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Set up Rust
+      uses: dtolnay/rust-toolchain@stable
+      with:
+        targets: wasm32-unknown-unknown
+
+    - name: Install Soroban CLI
+      run: cargo install --locked soroban-cli
+
+    - name: Build Smart Contracts
+      working-directory: ./contracts
+      run: cargo build --target wasm32-unknown-unknown --release
+
+    - name: Run Tests
+      working-directory: ./contracts
+      run: cargo test
