@@ -153,20 +153,25 @@ For the full system design, consensus model, and database schema, see [`ARCHITEC
 
 <div align="center">
 
-> The Nexora Interface — a clean, high-fidelity command center designed for cryptographic precision, styled in a minimal black-and-white Web3 aesthetic.
-
+> The Nexora Interface — A clean, high-fidelity command center designed for cryptographic precision.
 <table>
   <tr>
-    <td><img width="400" alt="Nexora landing screen" src="./frontend/public/screenshots/landing.png" /></td>
-    <td><img width="400" alt="Nexora dashboard" src="./frontend/public/screenshots/dashboard.png" /></td>
+    <td><<img width="400" alt="image" src="https://github.com/user-attachments/assets/b8ab72b9-e193-4bbf-ae29-2479f687566f" />
+</td>
+    <td><<img width="400" alt="image" src="https://github.com/user-attachments/assets/851e10cc-c2c1-4532-8941-56861f811ef9" />
+</td>
   </tr>
   <tr>
-    <td><img width="400" alt="Nexora builder" src="./frontend/public/screenshots/builder.png" /></td>
-    <td><img width="400" alt="Nexora admin panel" src="./frontend/public/screenshots/admin.png" /></td>
+    <td><img width="400" alt="image" src="https://github.com/user-attachments/assets/42f9c47f-92f0-438d-9cec-bfa079c40593" />
+</td>
+    <td><img width="400" alt="image" src="https://github.com/user-attachments/assets/2b010905-8a9d-4550-be81-c6caa3e66fe2" />
+</td>
   </tr>
   <tr>
-    <td><img width="400" alt="Nexora billing" src="./frontend/public/screenshots/billing.png" /></td>
-    <td><img width="400" alt="Nexora telemetry" src="./frontend/public/screenshots/screen2.png" /></td>
+    <td><img width="400" alt="image" src="https://github.com/user-attachments/assets/617c4b2a-8d89-4d85-8e17-5a8f7e9cf5ac" />
+</td>
+    <td><img width="400" alt="image" src="https://github.com/user-attachments/assets/241850c0-c585-4630-999c-0ef6aab4ebc8" />
+</td>
   </tr>
 </table>
 
@@ -174,24 +179,9 @@ For the full system design, consensus model, and database schema, see [`ARCHITEC
 
 ---
 
-## ✦ Smart Contract Deployments (Stellar Testnet)
-
-Nexora's core architecture relies on the following Soroban smart contracts deployed to the Stellar Testnet:
-
-| Contract | Contract ID |
-|---|---|
-| **Logic Registry** | `CB6FTILLJ3WMRL6YEDUO6H4F6YQ54EA6PRZVHLOAAVK5G5V2AHA4K4CT` |
-| **Proof Verifier** | `CAFBXDITV3RPOWZXGYXRZUJD2HND2HVRVOFLKYWMBY7CRJG4PKRGQ7RZ` |
-| **Execution Router** | `CBTD2KTXY22MZ5BTU7QU5H7G3H3I5PHSV3A66VHX7KGAY5POTI3K6AM5` |
-
-> Alternate deployment set used for early integration testing:
-> `CC6ZZ464E3YHRRNFAQ5CXJWA7PLCSLPNQ2SPUQ2LJUSAYB3GZEVU7RTM` (Execution Router) · `CCPHWXKVAM74QTLBHSOQAZJDDGHACTY6QMW5SOHSITP4NCLK2PDHFOXE` (Logic Registry) · `CDTFPR5BX5J77YEZQU5QLI6CYRFREEVE4XTE3K5QDAEG6YAOR6J7CNC6` (Proof Verifier)
-
----
-
 ## ✦ Verified Testnet Addresses
 
-The following Stellar Testnet wallets have verifiably interacted with the Nexora Protocol. Inspect any of them on [Stellar Expert](https://stellar.expert/explorer/testnet).
+The following Stellar Testnet wallets have verifiably interacted with the Nexora Protocol. Inspect any on [Stellar Expert](https://stellar.expert/explorer/testnet).
 
 ```
 GB3Q3R3W3CS6BF3MCF3UH2Q3X6NWGPXU55LBXKXGJT5QHYQUNIL4WTBG
@@ -206,17 +196,37 @@ GB5W5XZSOJ2MSSEAM262YN4MHJOWBYV3QRYUBQ2T3VJK7H5JGA2GF6JA
 GAV5URBSIROK7Q7LYOONGGOCANBH56DPO4K7ZKTJ5BRF4C55HDQPG2HF
 ```
 
+## ✦ Smart Contract Deployments (Stellar Testnet)
+
+Nexora's core architecture relies on the following Soroban Smart Contracts deployed to the Stellar Testnet:
+
+- **Execution Router Contract:** `CC6ZZ464E3YHRRNFAQ5CXJWA7PLCSLPNQ2SPUQ2LJUSAYB3GZEVU7RTM`
+- **Logic Registry Contract:** `CCPHWXKVAM74QTLBHSOQAZJDDGHACTY6QMW5SOHSITP4NCLK2PDHFOXE`
+- **Proof Verifier Contract:** `CDTFPR5BX5J77YEZQU5QLI6CYRFREEVE4XTE3K5QDAEG6YAOR6J7CNC6`
+
+---
+
+## ✦ Smart Contract IDs (Soroban)
+
+The following core protocol contracts are deployed on the **Stellar Testnet**.
+
+| Contract | Contract ID |
+|---|---|
+| **Logic Registry** | `CB6FTILLJ3WMRL6YEDUO6H4F6YQ54EA6PRZVHLOAAVK5G5V2AHA4K4CT` |
+| **Proof Verifier** | `CAFBXDITV3RPOWZXGYXRZUJD2HND2HVRVOFLKYWMBY7CRJG4PKRGQ7RZ` |
+| **Execution Router** | `CBTD2KTXY22MZ5BTU7QU5H7G3H3I5PHSV3A66VHX7KGAY5POTI3K6AM5` |
+
 ---
 
 ## ✦ Protocol Identity & RBAC
 
 Nexora implements a sovereign identity model where your wallet is your passport. Access is governed by specific protocol roles with **automated profile synchronization**:
 
-- **🏛️ System Administrator** — Automatic promotion for the configured Admin Wallet. Full governance oversight and global Kill Switch access.
-- **👨‍💻 Developer** — Access to the Developer Portal, API Key management, and Sandbox environments.
-- **📡 Node Operator** — Access to real-time network telemetry, health monitoring, and staking metrics.
-- **🏛️ DAO Admin** — Protocol governance oversight and multi-sig rule approval.
-- **👤 Guest** — Explore the protocol with public analytics and global telemetry.
+- **🏛️ System Administrator**: Automatic promotion for the configured Admin Wallet. Full governance oversight and global Kill Switch access.
+- **👨‍💻 Developer**: Access to the Developer Portal, API Key management, and Sandbox environments.
+- **📡 Node Operator**: Access to real-time network telemetry, health monitoring, and staking metrics.
+- **🏛️ DAO Admin**: Protocol governance oversight and multi-sig rule approval.
+- **👤 Guest**: Explore the protocol with public analytics and global telemetry.
 
 ---
 
@@ -272,7 +282,7 @@ cd backend && npm run dev
 cd frontend && npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser, connect Freighter, and start orchestrating.
+Open [http://localhost:3000](http://localhost:3000) in your browser. Connect Freighter and start orchestrating.
 
 ---
 
@@ -281,13 +291,44 @@ Open [http://localhost:3000](http://localhost:3000) in your browser, connect Fre
 | Document | Description |
 |---|---|
 | 📐 [`ARCHITECTURE.md`](./ARCHITECTURE.md) | System design, consensus models, and full database schema |
-| 🧩 SDK Docs | In-app documentation available at `/docs/sdk` once the frontend is running |
 
 ---
 
+#### 1. Improve UX/UI and product stability
+To ensure a premium, intuitive experience, we made significant visual and structural upgrades:
+- **Refined User Flow:** Smoother page transitions and reduced click-depth for core actions.
+- **Optimized Aesthetics:** Improved color contrast, typography weights, and added a highly requested dark mode option.
+- **Enhanced Stability:** Resolved minor edge cases related to cross-chain state synchronization.
+
+#### 2. Optimize onboarding experience
+We drastically lowered the barrier to entry for non-technical users entering the Web3 space:
+- **Quick Start Guide:** A comprehensive guide immediately available upon first login.
+- **Gamified Onboarding:** A step-by-step interactive flow to build the first Smart Predicate.
+- **Expanded Support:** Added contextual tooltips and an expanded FAQ section for immediate help.
+
+### 3. Feedback Questionnaire
+Beyond standard usability metrics, users were asked:
+1. **Is there any feature you think this product is lacking?**
+2. **Did you find any bugs/errors/issues while using this app?**
+3. **Do you think this dApp is able to solve the issue it's targeting (Cross-chain automation)?**
+4. **How intuitive is the Smart Predicate builder for non-technical users?**
+
+
+### 🚀 Next Phase Evolutions (Post-MVP)
+
+Based on the extensive user feedback and telemetry collected during the Level 5 testing phase, we have clearly identified our roadmap for the next evolution of Nexora. Our focus will shift toward expanding cross-chain compatibility, increasing the accessibility of the Logic Architect, and decentralizing the relay nodes further.
+
+**Planned Improvements & Feature Roadmap:**
+1. **Multi-Chain Wallet Connect:** Allow users to authenticate not just with Freighter (Stellar), but also via MetaMask and Rabby for seamless EVM integration.
+2. **Visual Blueprint Builder:** Users noted the Logic Architect has a learning curve. We plan to build a "drag-and-drop" visual builder for Smart Predicates so users do not need to write raw JSON configuration files. (Feedback mapped from: *UI can be more intuitive*)
+3. **Decentralized Relay Incentives:** Introduce a staking mechanism for the Active Relayer Nodes (currently simulating 1,292 nodes) so third parties can actively earn Protocol Revenue.
+4. **Mobile Responsive Dashboard:** Optimize the high-fidelity UI for mobile devices to allow DAO admins to monitor telemetry on the go. (Feedback mapped from: *Enhance the mobile responsiveness*).
+
+*(Note: The foundational architecture to support these upcoming improvements was laid down in commit [`60a3b5e`](https://github.com/MEGHA3112/Nexora) during our final layout refactoring).*
+
 ## ✦ Dashboard & Analytics
 
-A look at the real-time Nexora dashboards running on the Stellar Testnet:
+Here is a look at the real-time Nexora dashboards running on the Stellar Testnet:
 
 ### Transaction Activity (Logic Architect)
 ![Transaction Dashboard](./frontend/public/screenshots/screen1.png)
@@ -297,29 +338,16 @@ A look at the real-time Nexora dashboards running on the Stellar Testnet:
 
 ### 📊 Note on Testnet Data Aggregation
 
-Because Nexora currently runs on the Stellar Testnet and doesn't yet have a live mainnet contract pulling real-world USD deposits, the data shown for **Active Relayer Nodes**, **Global TVL**, and **Protocol Revenue** is dynamically calculated to simulate mainnet scale, based on the *real* number of proofs stored in the database.
+Because Nexora is currently running on the Stellar Testnet and doesn't have a live mainnet contract pulling real-world USD deposits yet, the data for **Active Relayer Nodes**, **Global TVL**, and **Protocol Revenue** is dynamically calculated to simulate mainnet scale based on the *real* number of Proofs in the database.
 
-For demonstration purposes, the database is seeded with 10,000 proofs. The backend takes that real count and calculates metrics proportionally:
+For demonstration purposes, the database is seeded with 10,000 Proofs. The backend takes that real database count and calculates the metrics proportionally:
 
-| Metric | Formula | Result |
-|---|---|---|
-| **TVL** | 10,000 proofs × $142,000 avg. locked per batch | **$1.42 Billion** |
-| **Revenue** | 10,000 proofs × $18 fee per proof | **$180,000** |
-| **Relayer Nodes** | 10,000 proofs ÷ 8 | **1,292 active nodes** |
-| **Finality Time** | Hardcoded (real Stellar network average) | **0.84s** |
+- **TVL:** Calculated as 10,000 proofs × $142,000 average locked per batch = **$1.42 Billion**
+- **Revenue:** Calculated as 10,000 proofs × $18 fee per proof = **$180,000**
+- **Relayer Nodes:** Calculated as 10,000 proofs ÷ 8 = **1,292 active nodes** supporting the load.
+- **Finality Time:** Hardcoded to **0.84s** because that is the actual real-world average finality time of the Stellar Network.
 
-If the protocol generates another 5,000 proofs, these numbers scale up automatically in real time — making the dashboard fully functional for testing and live presentations.
-
----
-
-## 🚀 Next Phase Evolutions (Post-MVP)
-
-Based on extensive user feedback and telemetry collected during the Level 5 testing phase, our roadmap for the next evolution of Nexora is clearly mapped out. Focus areas: expanding cross-chain compatibility, increasing accessibility of the Logic Architect, and further decentralizing relay nodes.
-
-1. **Multi-Chain Wallet Connect** — Authenticate not just with Freighter (Stellar), but also via MetaMask and Rabby for seamless EVM integration.
-2. **Visual Blueprint Builder** — A drag-and-drop visual builder for Smart Predicates, so users don't need to write raw JSON configuration. *(Feedback: "UI can be more intuitive")*
-3. **Decentralized Relay Incentives** — A staking mechanism for Active Relayer Nodes (currently simulating 1,292 nodes) so third parties can earn Protocol Revenue.
-4. **Mobile-Responsive Dashboard** — Optimize the high-fidelity UI for mobile so DAO admins can monitor telemetry on the go. *(Feedback: "Enhance the mobile responsiveness")*
+This means if the protocol generates another 5,000 proofs, those numbers will automatically scale up in real-time, making it perfectly functional for testing and presentations!
 
 ---
 
@@ -330,6 +358,14 @@ Based on extensive user feedback and telemetry collected during the Level 5 test
 Built with ❤️ and cryptographic conviction for a **decentralized future.**
 
 *Nexora Protocol — Where trust is a proof, not a promise.*
+
+</div>
+
+<!-- End of README -->
+
+<!-- testnet expansion -->
+
+<!-- integration guide final -->
 
 Licensed under [MIT](./LICENSE)
 
