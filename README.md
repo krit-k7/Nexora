@@ -1,6 +1,6 @@
 <div align="center">
 
-# ⬡ NEXORA PROTOCOL
+# NEXORA PROTOCOL
 
 ### *Sovereign Infrastructure for Trustless Cross-Chain Automation*
 
