@@ -6,8 +6,7 @@
 
 > Cryptographic certainty. Zero trust. Infinite interoperability.
 
-[![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://Nexora-vert.vercel.app/)
-[![Backend API](https://img.shields.io/badge/⚡_Backend_API-Render-46E3B7?style=for-the-badge&logo=render&logoColor=white)](https://Nexora-backend-il3o.onrender.com)
+[![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://nexora-mu-beryl.vercel.app/)
 [![Demo Video](https://img.shields.io/badge/🎬_Full_Walkthrough-Google_Drive-4285F4?style=for-the-badge&logo=googledrive&logoColor=white)](https://drive.google.com/file/d/1CuDCoJ5bQqvDinPmUCBDK1gz97_HtXD1/view)
 [![GitHub](https://img.shields.io/badge/📦_Source_Code-GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MEGHA3112/Nexora)
 
@@ -17,10 +16,8 @@
 
 ## 🚀 Live Links
 
-- **🌐 Live Demo (Frontend):** [https://Nexora-vert.vercel.app/](https://Nexora-vert.vercel.app/)
-
-- **⚡ Backend API Server:** [https://Nexora-backend-il3o.onrender.com](https://Nexora-backend-il3o.onrender.com)
-
+- **🌐 Live Demo (Frontend):** [https://Nexora-vert.vercel.app/](https://nexora-mu-beryl.vercel.app/)
+  
 - **🎬 Demo Video (Full Walkthrough):** [Watch on Google Drive](https://drive.google.com/file/d/1CuDCoJ5bQqvDinPmUCBDK1gz97_HtXD1/view)
 
 - **📐 System Architecture:** [ARCHITECTURE.md](./ARCHITECTURE.md)
