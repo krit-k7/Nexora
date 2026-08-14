@@ -77,7 +77,8 @@ No intermediaries. No assumptions. Just math.
   <tr>
     <td><<img width="400" alt="image" src="https://github.com/user-attachments/assets/b8ab72b9-e193-4bbf-ae29-2479f687566f" />
 </td>
-    <td><img src="https://github.com/user-attachments/assets/495b9666-6605-400a-b0c6-5125c3dd87da" width="400" alt="Screenshot 2"/></td>
+    <td><<img width="400" alt="image" src="https://github.com/user-attachments/assets/851e10cc-c2c1-4532-8941-56861f811ef9" />
+</td>
   </tr>
   <tr>
     <td><img src="https://github.com/user-attachments/assets/b21644bd-8106-4f33-baea-2798ce9b33f4" width="400" alt="Screenshot 3"/></td>
