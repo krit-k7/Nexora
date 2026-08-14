@@ -331,7 +331,8 @@ Based on the extensive user feedback and telemetry collected during the Level 5 
 Here is a look at the real-time Nexora dashboards running on the Stellar Testnet:
 
 ### Transaction Activity (Logic Architect)
-![Transaction Dashboard](./frontend/public/screenshots/screen1.png)
+<img width="1915" height="951" alt="image" src="https://github.com/user-attachments/assets/96a697a5-8a53-4a45-b3a4-b2ca95c6d819" />
+
 
 ### Real-Time Telemetry & Protocol Analytics
 ![Analytics Dashboard](./frontend/public/screenshots/screen2.png)
