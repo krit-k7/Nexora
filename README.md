@@ -83,7 +83,8 @@ No intermediaries. No assumptions. Just math.
   <tr>
     <td><img width="400" alt="image" src="https://github.com/user-attachments/assets/42f9c47f-92f0-438d-9cec-bfa079c40593" />
 </td>
-    <td><img src="https://github.com/user-attachments/assets/7a665330-59dd-4107-9c69-00133aebbb1a" width="400" alt="Screenshot 4"/></td>
+    <td><img width="200" alt="image" src="https://github.com/user-attachments/assets/a84ad87a-b398-40f8-a13e-b4e4f7a0e3ad" />
+</td>
   </tr>
   <tr>
     <td><img src="https://github.com/user-attachments/assets/6071c693-466e-4dd5-9add-8890d57e795e" width="400" alt="Screenshot 5"/></td>
