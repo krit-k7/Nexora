@@ -179,6 +179,12 @@ For the full system design, consensus model, and database schema, see [`ARCHITEC
 
 ---
 
+## Mobile Responsive UI
+
+<img width="1781" height="1079" alt="image" src="https://github.com/user-attachments/assets/4c7ed566-76f9-4305-a7a8-e6024535f5d9" />
+
+---
+
 ## ✦ Verified Testnet Addresses
 
 The following Stellar Testnet wallets have verifiably interacted with the Nexora Protocol. Inspect any on [Stellar Expert](https://stellar.expert/explorer/testnet).
