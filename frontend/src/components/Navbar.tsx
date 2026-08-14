@@ -52,7 +52,7 @@ const Navbar = () => {
             <img src="/logo.png" alt="Verixa Logo" className="w-6 h-6 object-contain" />
           </div>
         <span className="text-base font-bold tracking-[0.1em] text-slate-900 dark:text-white group-hover:text-blue-500 transition-colors">
-            VERIXA<span className="text-blue-500">_</span>
+            NEXORA<span className="text-blue-500">_</span>
           </span>
         </Link>
         
